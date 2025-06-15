@@ -1,12 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>GitHub Page</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Melanie Guillén | Research Fellow</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z47QRTXQ1N"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Z47QRTXQ1N');
+  </script>
+
+  <!-- Favicon (optional, add your own later) -->
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+
+  <!-- Unicons -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+  <!-- Swiper CSS for sliders/animations -->
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
-  <h1>Melanie Guillen, PhD</h1>
-  <p>Research Fellow in Digital Chemistry</p>
+  <!-- Header -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo">Melanie Guillén</a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list grid">
+          <li class="nav__item"><a href="#home" class="nav__link active-link"><i class="uil uil-estate nav__icon"></i> Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link"><i class="uil uil-user nav__icon"></i> About</a></li>
+          <li class="nav__item"><a href="#news" class="nav__link"><i class="uil uil-newspaper nav__icon"></i> News</a></li>
+          <li class="nav__item"><a href="#science-art" class="nav__link"><i class="uil uil-palette nav__icon"></i> Science + Art</a></li>
+          <li class="nav__item"><a href="#teaching" class="nav__link"><i class="uil uil-chalkboard-teacher nav__icon"></i> Teaching</a></li>
+          <li class="nav__item"><a href="#publications" class="nav__link"><i class="uil uil-file nav__icon"></i> Publications</a></li>
+          <li class="nav__item"><a href="#media" class="nav__link"><i class="uil uil-film nav__icon"></i> Media</a></li>
+          <li class="nav__item"><a href="#bio" class="nav__link"><i class="uil uil-database nav__icon"></i> Bio</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link"><i class="uil uil-message nav__icon"></i> Contact</a></li>
+        </ul>
+        <i class="uil uil-times nav__close" id="nav-close"></i>
+      </div>
+
+      <div class="nav__btns">
+        <i class="uil uil-moon change-theme" id="theme-button"></i>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="uil uil-bars"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section class="home section" id="home">
+    <div class="home__container container grid">
+      <div class="home__data">
+        <h1 class="home__title">Melanie Guillén</h1>
+        <h3 class="home__subtitle">Research Fellow in Digital Chemistry</h3>
+        <p class="home__description">Exploring innovation at the intersection of data, molecules, and discovery.</p>
+        <a href="#contact" class="button button--flex">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Placeholder for About, News, Science + Art, Teaching, Publications, Media, Bio, Contact -->
+  <!-- You can expand these sections similarly -->
+
+  <!-- Swiper JS -->
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <!-- Main JS -->
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
