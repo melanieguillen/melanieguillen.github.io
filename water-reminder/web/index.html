@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Water Reminder</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <section class="card">
+      <p class="eyebrow">Hydration</p>
+      <h1>Drink water</h1>
+      <p class="subtitle">Your glass slowly empties through the day. After you drink, tap the glass to refill it.</p>
+
+      <div class="stats">
+        <div>
+          <span class="stats-label">Glass level</span>
+          <strong id="levelLabel">100%</strong>
+        </div>
+        <div>
+          <span class="stats-label">Status</span>
+          <strong id="statusLabel">Freshly refilled</strong>
+        </div>
+      </div>
+
+      <button id="glassButton" class="glass-button" type="button" aria-label="Refill glass">
+        <div class="glass-frame">
+          <div id="water" class="water">
+            <div class="water-shine"></div>
+            <div class="bubble bubble-one"></div>
+            <div class="bubble bubble-two"></div>
+            <div class="bubble bubble-three"></div>
+          </div>
+          <div class="glass-highlight"></div>
+        </div>
+      </button>
+
+      <div class="actions">
+        <button id="refillButton" class="primary" type="button">I drank water</button>
+        <button id="notifyButton" class="secondary" type="button">Enable reminders</button>
+      </div>
+
+      <p id="messageLabel" class="message">Your glass is still nice and full.</p>
+      <p class="footer-note">This app runs locally on your laptop and keeps the last refill time in this browser.</p>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
