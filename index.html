@@ -17,413 +17,178 @@
     gtag("config", "G-Z47QRTXQ1N");
   </script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
-    rel="stylesheet"
-  />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="mobile-bar">
-    <a class="mobile-bar__brand" href="#home">Melanie Guillén</a>
-    <button class="mobile-bar__toggle" type="button" aria-label="Toggle navigation" data-menu-button>
-      <span></span>
-      <span></span>
-    </button>
-  </header>
-
-  <div class="page-shell">
-    <aside class="sidebar" data-sidebar>
-      <div class="sidebar__top">
-        <img
-          class="profile-photo"
-          src="assets/profile.jpeg"
-          alt="Portrait of Melanie Guillén-Soler"
-        />
-        <a class="brand" href="#home">Melanie Guillén</a>
-        <p class="brand__role">Digital chemistry researcher</p>
-        <p class="brand__summary">
-          Research Associate in the Cronin Group, building more programmable and data-rich chemistry workflows.
-        </p>
-      </div>
-
-      <nav class="sidebar__nav" aria-label="Primary">
-        <a href="#home" data-nav-link>Home</a>
-        <a href="#news" data-nav-link>News</a>
-        <a href="#about" data-nav-link>About</a>
-        <a href="#history" data-nav-link>History</a>
+  <header class="masthead">
+    <div class="masthead__inner">
+      <a class="site-title" href="#home">Melanie Guillén-Soler</a>
+      <button class="menu-toggle" type="button" aria-label="Toggle navigation" data-menu-button>
+        Menu
+      </button>
+      <nav class="masthead__nav" aria-label="Primary navigation" data-sidebar>
+        <a href="#research" data-nav-link>Research</a>
         <a href="#publications" data-nav-link>Publications</a>
-        <a href="#profiles" data-nav-link>Profiles</a>
+        <a href="#codes" data-nav-link>Codes</a>
         <a href="#contact" data-nav-link>Contact</a>
       </nav>
+    </div>
+  </header>
 
-      <div class="sidebar__links">
-        <a href="https://www.linkedin.com/in/melanie-guillen-542899145/?locale=es" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="https://scholar.google.com/citations?hl=en&amp;user=Dzg-OpQAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" target="_blank" rel="noopener noreferrer">Google Scholar</a>
-        <a href="https://github.com/melanieguillen" target="_blank" rel="noopener noreferrer">GitHub</a>
-      </div>
+  <div class="page" id="home">
+    <aside class="author-profile">
+      <img
+        class="author-profile__image"
+        src="assets/profile.jpeg"
+        alt="Portrait of Melanie Guillén-Soler"
+      />
+      <h1>Melanie Guillén-Soler</h1>
+      <p class="author-profile__role">Research Associate at the University of Glasgow</p>
+      <p class="author-profile__bio">
+        Digital chemistry, electrochemistry automation, and programmable chemical systems.
+      </p>
+
+      <ul class="author-links" aria-label="Profile links">
+        <li>Glasgow, United Kingdom</li>
+        <li><a href="mailto:Melanie.GuillenSoler@glasgow.ac.uk">Email</a></li>
+        <li>
+          <a href="https://www.linkedin.com/in/melanie-guillen-542899145/?locale=es" target="_blank" rel="noopener noreferrer">
+            LinkedIn
+          </a>
+        </li>
+        <li>
+          <a href="https://scholar.google.com/citations?hl=en&amp;user=Dzg-OpQAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" target="_blank" rel="noopener noreferrer">
+            Google Scholar
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/melanieguillen" target="_blank" rel="noopener noreferrer">
+            GitHub
+          </a>
+        </li>
+        <li>
+          <a href="https://www.gla.ac.uk/schools/chemistry/staff/melanieguillensoler/" target="_blank" rel="noopener noreferrer">
+            University profile
+          </a>
+        </li>
+      </ul>
     </aside>
 
-    <main class="content">
-      <section class="hero section" id="home">
-        <div class="hero__copy" data-reveal>
-          <p class="eyebrow">Academic portfolio</p>
-          <h1>Melanie Guillén-Soler</h1>
-          <p class="hero__lede">
-            Research Associate at the University of Glasgow working across electrochemistry automation,
-            digital chemistry, and programmable materials discovery.
-          </p>
-          <p class="hero__text">
-            This site brings together a concise research profile, career timeline, and selected publications
-            from Melanie's public academic footprint, with direct links to LinkedIn, Google Scholar, and GitHub.
-          </p>
-
-          <div class="hero__actions">
-            <a class="button button--primary" href="#contact">Get in touch</a>
-            <a
-              class="button button--ghost"
-              href="https://scholar.google.com/citations?hl=en&amp;user=Dzg-OpQAAAAJ&amp;view_op=list_works&amp;sortby=pubdate"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View Scholar
-            </a>
-          </div>
-        </div>
-
-        <aside class="hero__panel" data-reveal>
-          <div class="panel-card">
-            <p class="panel-card__label">Current role</p>
-            <h2>Research Associate</h2>
-            <p>School of Chemistry, University of Glasgow</p>
-          </div>
-          <div class="panel-card">
-            <p class="panel-card__label">Research themes</p>
-            <ul class="tag-list" aria-label="Research themes">
-              <li>Digital chemistry</li>
-              <li>Electrochemistry automation</li>
-              <li>Materials discovery</li>
-              <li>Energy-related catalysis</li>
-            </ul>
-          </div>
-          <div class="panel-card panel-card--accent">
-            <p class="panel-card__label">Profile links</p>
-            <p>LinkedIn, Google Scholar, GitHub, and the University of Glasgow staff profile are all one click away.</p>
-          </div>
-        </aside>
-      </section>
-
-      <section class="section" id="news">
-        <div class="section-heading" data-reveal>
-          <p class="eyebrow">Recent highlights</p>
-          <h2>Research</h2>
-          <p>
-            A few recent milestones that show the shape of Melanie's work across programmable chemistry,
-            electrochemistry, and polyoxometalate materials.
-          </p>
-        </div>
-
-        <div class="news-grid">
-          <article class="news-card" data-reveal>
-            <p class="news-card__date">2026</p>
-            <h3>ElectroChemputer with integrated monitoring for programmable electrochemistry</h3>
-            <p>
-              A Chem publication extending programmable electrochemistry with integrated monitoring and
-              tighter control over experimental workflows.
-            </p>
-          </article>
-
-          <article class="news-card" data-reveal>
-            <p class="news-card__date">2025</p>
-            <h3>Compression of molybdenum blue polyoxometalate cluster rings</h3>
-            <p>
-              JACS work describing strategies to build new compressed molybdenum blue cluster architectures.
-            </p>
-          </article>
-
-          <article class="news-card" data-reveal>
-            <p class="news-card__date">2025</p>
-            <h3>Adaptive catalytic nanointerfaces for controlled hydrogen evolution</h3>
-            <p>
-              Advanced Science research focused on catalytic nanointerfaces for hydrogen evolution under
-              electrochemical conditions.
-            </p>
-          </article>
-
-          <article class="news-card" data-reveal>
-            <p class="news-card__date">2024</p>
-            <h3>Algorithm-driven robotic discovery of polyoxometalate-scaffolding MOFs</h3>
-            <p>
-              A JACS paper combining robotics and machine learning to accelerate closed-loop exploration
-              of crystalline materials.
-            </p>
-          </article>
-        </div>
-      </section>
-
+    <main class="page-content">
       <section class="section" id="about">
-        <div class="section-heading" data-reveal>
-          <p class="eyebrow">About</p>
-          <h2>An interdisciplinary research path</h2>
-        </div>
-
-        <div class="about-grid">
-          <div class="about-copy" data-reveal>
-            <p>
-              Melanie Guillén-Soler is a Research Associate in the School of Chemistry at the University
-              of Glasgow. Her current work in the Cronin Group focuses on automation of electrochemistry
-              and the broader effort to make chemistry more programmable, reproducible, and data-rich.
-            </p>
-            <p>
-              Her academic path spans Madrid, Erlangen, Santiago de Compostela, Birmingham, and Glasgow.
-              She earned an M.Sc. in Organic Chemistry from Universidad Autónoma de Madrid in 2018 and a
-              Ph.D. in Chemistry from Universidade de Santiago de Compostela in 2023, where she worked on
-              novel electrocatalyst materials for advanced energy-conversion technologies.
-            </p>
-            <p>
-              Earlier training included an Erasmus year at Friedrich-Alexander-Universität Erlangen-Nürnberg
-              and a summer fellowship at the University of Birmingham. Outside the lab, her public group
-              profile highlights running, travel, and time in nature.
-            </p>
-          </div>
-
-          <div class="facts-grid" data-reveal>
-            <article class="fact-card">
-              <p class="fact-card__label">Current base</p>
-              <h3>University of Glasgow</h3>
-              <p>Cronin Group, School of Chemistry</p>
-            </article>
-
-            <article class="fact-card">
-              <p class="fact-card__label">Ph.D.</p>
-              <h3>USC, 2023</h3>
-              <p>Chemistry and electrocatalyst materials</p>
-            </article>
-
-            <article class="fact-card">
-              <p class="fact-card__label">M.Sc.</p>
-              <h3>UAM, 2018</h3>
-              <p>Organic Chemistry</p>
-            </article>
-
-            <article class="fact-card">
-              <p class="fact-card__label">Core focus</p>
-              <h3>Programmable chemistry</h3>
-              <p>Automation, electrochemistry, and materials discovery</p>
-            </article>
-          </div>
-        </div>
+        <h2>About Me</h2>
+        <p>
+          Melanie Guillén-Soler is a Research Associate in the School of Chemistry at the University
+          of Glasgow. Her current work in the Cronin Group focuses on automation of electrochemistry
+          and the broader effort to make chemistry more programmable, reproducible, and data-rich.
+        </p>
+        <p>
+          Her academic path spans Madrid, Erlangen, Santiago de Compostela, Birmingham, and Glasgow.
+          She earned an M.Sc. in Organic Chemistry from Universidad Autónoma de Madrid and a Ph.D.
+          in Chemistry from Universidade de Santiago de Compostela, where she worked on electrocatalyst
+          materials for advanced energy-conversion technologies.
+        </p>
       </section>
 
-      <section class="section" id="history">
-        <div class="section-heading" data-reveal>
-          <p class="eyebrow">History</p>
-          <h2>Training across chemistry and automation</h2>
-        </div>
+      <section class="section" id="research">
+        <h2>Research</h2>
+        <p>
+          My research connects digital chemistry, robotic experimentation, electrochemical methods,
+          and materials discovery. I am interested in systems where hardware, chemical reactivity,
+          analytical feedback, and algorithmic decision-making can be treated as one programmable
+          experimental workflow.
+        </p>
+        <ul>
+          <li>Programmable electrochemistry and electro-photo-chemical platforms</li>
+          <li>Robotic workflows for reproducible chemical synthesis and analysis</li>
+          <li>Polyoxometalate materials, electrocatalysis, and energy-related chemistry</li>
+          <li>Data-rich experimental design for automated discovery</li>
+        </ul>
+      </section>
 
-        <div class="timeline">
-          <article class="timeline__item" data-reveal>
-            <p class="timeline__year">2024 - Present</p>
-            <h3>Research Associate, University of Glasgow</h3>
-            <p>
-              Working in the Cronin Group on automation of electrochemistry and digital chemistry systems.
-            </p>
-          </article>
-
-          <article class="timeline__item" data-reveal>
-            <p class="timeline__year">2023</p>
-            <h3>Ph.D. in Chemistry, Universidade de Santiago de Compostela</h3>
-            <p>
-              Completed doctoral research on novel electrocatalyst materials for advanced energy-conversion
-              technologies.
-            </p>
-          </article>
-
-          <article class="timeline__item" data-reveal>
-            <p class="timeline__year">2018</p>
-            <h3>M.Sc. in Organic Chemistry, Universidad Autónoma de Madrid</h3>
-            <p>
-              Worked on non-covalent synthesis of bicomponent self-assembled nanotubes under the supervision
-              of David González Rodríguez.
-            </p>
-          </article>
-
-          <article class="timeline__item" data-reveal>
-            <p class="timeline__year">2017</p>
-            <h3>B.Sc. in Chemistry and Summer Fellow, UAM / University of Birmingham</h3>
-            <p>
-              Finished undergraduate studies at UAM and joined the University of Birmingham as a summer fellow
-              in the group of Francisco Fernández-Trillo.
-            </p>
-          </article>
-
-          <article class="timeline__item" data-reveal>
-            <p class="timeline__year">2016</p>
-            <h3>Erasmus year, Friedrich-Alexander-Universität Erlangen-Nürnberg</h3>
-            <p>
-              Spent the fourth year of undergraduate study in Erlangen, Germany, through the Erasmus programme.
-            </p>
-          </article>
-        </div>
+      <section class="section" id="updates">
+        <h2>Recent Updates</h2>
+        <ul class="updates-list">
+          <li>
+            <strong>2026:</strong> ElectroChemputer with integrated monitoring for programmable
+            electrochemistry published in <em>Chem</em>.
+          </li>
+          <li>
+            <strong>2025:</strong> Work on compression of molybdenum blue polyoxometalate cluster
+            rings published in <em>Journal of the American Chemical Society</em>.
+          </li>
+          <li>
+            <strong>2024:</strong> Algorithm-driven robotic discovery of polyoxometalate-scaffolding
+            metal-organic frameworks published in <em>Journal of the American Chemical Society</em>.
+          </li>
+        </ul>
       </section>
 
       <section class="section" id="publications">
-        <div class="section-heading" data-reveal>
-          <p class="eyebrow">Publications</p>
-          <h2>Selected recent work</h2>
-          <p>
-            A curated set of recent publications from Melanie's public profile and institutional listings.
-            For the full list, visit Google Scholar.
-          </p>
-        </div>
-
-        <div class="publication-list">
-          <article class="publication-card" data-reveal>
-            <p class="publication-card__meta">2026 • Chem</p>
-            <h3>
-              <a href="https://doi.org/10.1016/j.chempr.2025.102907" target="_blank" rel="noopener noreferrer">
-                ElectroChemputer with integrated monitoring for programmable electrochemistry
-              </a>
-            </h3>
-            <p>
-              Early online publication on integrated monitoring for programmable electrochemical systems.
-            </p>
-          </article>
-
-          <article class="publication-card" data-reveal>
-            <p class="publication-card__meta">2025 • Journal of the American Chemical Society</p>
-            <h3>
-              <a href="https://doi.org/10.1021/jacs.5c00187" target="_blank" rel="noopener noreferrer">
-                Compression of molybdenum blue polyoxometalate cluster rings
-              </a>
-            </h3>
-            <p>
-              Reports new strategies for constructing highly compressed molybdenum blue polyoxometalate clusters.
-            </p>
-          </article>
-
-          <article class="publication-card" data-reveal>
-            <p class="publication-card__meta">2025 • Advanced Science</p>
-            <h3>
-              <a href="https://doi.org/10.1002/advs.202505104" target="_blank" rel="noopener noreferrer">
-                Adaptive catalytic nanointerfaces for controlled hydrogen evolution: an in situ electrochemical approach
-              </a>
-            </h3>
-            <p>
-              Explores adaptive catalytic nanointerfaces for controlled hydrogen evolution in electrochemical settings.
-            </p>
-          </article>
-
-          <article class="publication-card" data-reveal>
-            <p class="publication-card__meta">2024 • Journal of the American Chemical Society</p>
-            <h3>
-              <a href="https://doi.org/10.1021/jacs.4c09553" target="_blank" rel="noopener noreferrer">
-                Algorithm-driven robotic discovery of polyoxometalate-scaffolding metal-organic frameworks
-              </a>
-            </h3>
-            <p>
-              Combines robotics and machine learning to accelerate closed-loop discovery in crystalline materials.
-            </p>
-          </article>
-
-          <article class="publication-card" data-reveal>
-            <p class="publication-card__meta">2024 • Chem</p>
-            <h3>
-              <a href="https://doi.org/10.1016/j.chempr.2024.07.032" target="_blank" rel="noopener noreferrer">
-                Reaction: Programmable chemputable click chemistry
-              </a>
-            </h3>
-            <p>
-              A perspective-style contribution framing chemistry through programmable and chemputable workflows.
-            </p>
-          </article>
-
-          <article class="publication-card" data-reveal>
-            <p class="publication-card__meta">2025 • Advanced Materials</p>
-            <h3>
-              <a href="https://doi.org/10.1002/adma.202512902" target="_blank" rel="noopener noreferrer">
-                POM-based water splitting catalyst under acid conditions driven by its assembly on carbon nanotubes
-              </a>
-            </h3>
-            <p>
-              Online-ahead-of-print work on acid-stable water-splitting catalysis built from polyoxometalate and nanotube assemblies.
-            </p>
-          </article>
-        </div>
+        <h2>Selected Publications</h2>
+        <ol class="publication-list">
+          <li>
+            <a href="https://doi.org/10.1016/j.chempr.2025.102907" target="_blank" rel="noopener noreferrer">
+              ElectroChemputer with integrated monitoring for programmable electrochemistry
+            </a>.
+            <em>Chem</em>, 2026.
+          </li>
+          <li>
+            <a href="https://doi.org/10.1021/jacs.5c00187" target="_blank" rel="noopener noreferrer">
+              Compression of molybdenum blue polyoxometalate cluster rings
+            </a>.
+            <em>Journal of the American Chemical Society</em>, 2025.
+          </li>
+          <li>
+            <a href="https://doi.org/10.1002/advs.202505104" target="_blank" rel="noopener noreferrer">
+              Adaptive catalytic nanointerfaces for controlled hydrogen evolution: an in situ electrochemical approach
+            </a>.
+            <em>Advanced Science</em>, 2025.
+          </li>
+          <li>
+            <a href="https://doi.org/10.1021/jacs.4c09553" target="_blank" rel="noopener noreferrer">
+              Algorithm-driven robotic discovery of polyoxometalate-scaffolding metal-organic frameworks
+            </a>.
+            <em>Journal of the American Chemical Society</em>, 2024.
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.chempr.2024.07.032" target="_blank" rel="noopener noreferrer">
+              Reaction: Programmable chemputable click chemistry
+            </a>.
+            <em>Chem</em>, 2024.
+          </li>
+        </ol>
+        <p>
+          A full and regularly updated publication list is available through
+          <a href="https://scholar.google.com/citations?hl=en&amp;user=Dzg-OpQAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" target="_blank" rel="noopener noreferrer">
+            Google Scholar
+          </a>.
+        </p>
       </section>
 
-      <section class="section" id="profiles">
-        <div class="section-heading" data-reveal>
-          <p class="eyebrow">Profiles</p>
-          <h2>Follow the work across platforms</h2>
-        </div>
-
-        <div class="profiles-grid">
-          <a class="profile-card" href="https://www.linkedin.com/in/melanie-guillen-542899145/?locale=es" target="_blank" rel="noopener noreferrer" data-reveal>
-            <p class="profile-card__eyebrow">LinkedIn</p>
-            <h3>Professional profile</h3>
-            <p>Connect through Melanie's public LinkedIn profile.</p>
-          </a>
-
-          <a class="profile-card" href="https://scholar.google.com/citations?hl=en&amp;user=Dzg-OpQAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" target="_blank" rel="noopener noreferrer" data-reveal>
-            <p class="profile-card__eyebrow">Google Scholar</p>
-            <h3>Publication record</h3>
-            <p>Browse the full list of publications and citations.</p>
-          </a>
-
-          <a class="profile-card" href="https://www.gla.ac.uk/schools/chemistry/staff/melanieguillensoler/" target="_blank" rel="noopener noreferrer" data-reveal>
-            <p class="profile-card__eyebrow">University of Glasgow</p>
-            <h3>Current affiliation</h3>
-            <p>See the staff profile and institutional publication listing.</p>
-          </a>
-
-          <a class="profile-card" href="https://github.com/melanieguillen" target="_blank" rel="noopener noreferrer" data-reveal>
-            <p class="profile-card__eyebrow">GitHub</p>
-            <h3>Open web presence</h3>
-            <p>Source home for this GitHub Pages website and future project links.</p>
-          </a>
-        </div>
+      <section class="section" id="codes">
+        <h2>Codes</h2>
+        <p>
+          Project links and code repositories will be collected here. For now, see my
+          <a href="https://github.com/melanieguillen" target="_blank" rel="noopener noreferrer">GitHub profile</a>
+          and linked research repositories.
+        </p>
       </section>
 
-      <section class="section section--contact" id="contact">
-        <div class="section-heading" data-reveal>
-          <p class="eyebrow">Contact</p>
-          <h2>Get in touch</h2>
-        </div>
-
-        <div class="contact-card" data-reveal>
-          <div>
-            <p class="contact-card__label">Email</p>
-            <a class="contact-card__link" href="mailto:Melanie.GuillenSoler@glasgow.ac.uk">
-              Melanie.GuillenSoler@glasgow.ac.uk
-            </a>
-          </div>
-
-          <div class="contact-card__actions">
-            <a class="button button--primary" href="mailto:Melanie.GuillenSoler@glasgow.ac.uk">Email Melanie</a>
-            <a
-              class="button button--ghost"
-              href="https://www.linkedin.com/in/melanie-guillen-542899145/?locale=es"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Open LinkedIn
-            </a>
-          </div>
-        </div>
+      <section class="section" id="contact">
+        <h2>Contact</h2>
+        <p>
+          Email:
+          <a href="mailto:Melanie.GuillenSoler@glasgow.ac.uk">Melanie.GuillenSoler@glasgow.ac.uk</a>
+        </p>
       </section>
     </main>
   </div>
 
   <footer class="site-footer">
-    <p>© <span id="year"></span> Melanie Guillén-Soler</p>
-    <div class="site-footer__links">
-      <a href="#news">News</a>
-      <a href="#publications">Publications</a>
-      <a href="https://scholar.google.com/citations?hl=en&amp;user=Dzg-OpQAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" target="_blank" rel="noopener noreferrer">Scholar</a>
-    </div>
+    <p>
+      © <span id="year"></span> Melanie Guillén-Soler. Powered by GitHub Pages.
+    </p>
   </footer>
 
   <script src="script.js"></script>
