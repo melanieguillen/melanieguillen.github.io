@@ -17,7 +17,7 @@
     gtag("config", "G-Z47QRTXQ1N");
   </script>
 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=3" />
 </head>
 <body>
   <header class="masthead">
@@ -27,15 +27,14 @@
         Menu
       </button>
       <nav class="masthead__nav" aria-label="Primary navigation" data-sidebar>
-        <a href="#research" data-nav-link>Research</a>
-        <a href="#publications" data-nav-link>Publications</a>
-        <a href="#projects" data-nav-link>Projects</a>
-        <a href="#contact" data-nav-link>Contact</a>
+        <a href="#home" data-view-link="home">Home</a>
+        <a href="#publications" data-view-link="publications">Publications</a>
+        <a href="#projects" data-view-link="projects">Projects</a>
       </nav>
     </div>
   </header>
 
-  <div class="page" id="home">
+  <div class="page">
     <aside class="author-profile">
       <img
         class="author-profile__image"
@@ -75,167 +74,367 @@
     </aside>
 
     <main class="page-content">
-      <section class="section" id="about">
-        <h2>About Me</h2>
-        <p>
-          My career has strategically built an interdisciplinary profile at the forefront of digital
-          chemistry, integrating materials science, electrocatalysis, chemical automation, and AI for
-          sustainable energy discovery. I specialize in the development of automated platforms for
-          the controlled stimulus of electro- and photochemistry, utilizing integrated analytical
-          feedback to drive autonomous discovery.
-        </p>
-        <p>
-          During my PhD, I pioneered automated in-situ analysis to understand complex electrochemical
-          processes at nanointerfaces, leading to a real-time gas monitoring device and a granted
-          patent. I also designed an in-flow electrochemical cell for the ALBA synchrotron enabling
-          real-time electrocatalysis and XANES measurements, complemented by Raman, X-ray spectroscopy
-          and confocal microscopy studies. This research produced four publications, two papers in
-          progress, and two patents.
-        </p>
-        <p>
-          My postdoctoral work at the University of Glasgow expanded into digital chemistry with the
-          ElectroChemputer, the first universal framework for programmable electrosynthesis. This
-          platform features integrated analytical feedback, specifically real-time NMR monitoring in
-          continuous flow, to execute 15 reaction classes in parallel, as published in <em>Chem</em>
-          (2026). Since September 2024, I have served as Postdoctoral Researcher and Team Leader of the
-          Chemputer Reactivity Team in the Cronin Group. In this leadership role, I manage
-          multidisciplinary projects focused on advancing reactivity and chemical discovery through
-          robotics. Furthermore, my research focuses on the integration of electrochemical and
-          photochemical modalities into automated platforms with real-time analytical feedback.
-        </p>
-        <p>
-          Outside the lab, I enjoy bringing science to life through illustration, video editing, and
-          3D modelling. Some of my artwork has even made it onto the front covers of scientific
-          journals.
-        </p>
-        <div class="cover-gallery" aria-label="Selected scientific cover artwork">
-          <figure>
-            <img
-              src="assets/publications/chemsuschem-cover.png"
-              alt="ChemSusChem journal cover artwork designed by Melanie Guillén-Soler"
-              loading="lazy"
-            />
-            <figcaption><em>ChemSusChem</em>, 2021</figcaption>
-          </figure>
-          <figure>
-            <img
-              src="assets/publications/advanced-sustainable-systems-cover.png"
-              alt="Advanced Sustainable Systems journal cover artwork designed by Melanie Guillén-Soler"
-              loading="lazy"
-            />
-            <figcaption><em>Advanced Sustainable Systems</em>, 2024</figcaption>
-          </figure>
-        </div>
-      </section>
+      <div class="site-view is-active" id="home" data-site-view="home">
+        <section class="section" id="about">
+          <h2>About Me</h2>
+          <p>
+            My career has strategically built an interdisciplinary profile at the forefront of digital
+            chemistry, integrating materials science, electrocatalysis, chemical automation, and AI for
+            sustainable energy discovery. I specialize in the development of automated platforms for
+            the controlled stimulus of electro- and photochemistry, utilizing integrated analytical
+            feedback to drive autonomous discovery.
+          </p>
+          <p>
+            During my PhD, I pioneered automated in-situ analysis to understand complex electrochemical
+            processes at nanointerfaces, leading to a real-time gas monitoring device and a granted
+            patent. I also designed an in-flow electrochemical cell for the ALBA synchrotron enabling
+            real-time electrocatalysis and XANES measurements, complemented by Raman, X-ray spectroscopy
+            and confocal microscopy studies. This research produced four publications, two papers in
+            progress, and two patents.
+          </p>
+          <p>
+            My postdoctoral work at the University of Glasgow expanded into digital chemistry with the
+            ElectroChemputer, the first universal framework for programmable electrosynthesis. This
+            platform features integrated analytical feedback, specifically real-time NMR monitoring in
+            continuous flow, to execute 15 reaction classes in parallel, as published in <em>Chem</em>
+            (2026). Since September 2024, I have served as Postdoctoral Researcher and Team Leader of the
+            Chemputer Reactivity Team in the Cronin Group. In this leadership role, I manage
+            multidisciplinary projects focused on advancing reactivity and chemical discovery through
+            robotics. Furthermore, my research focuses on the integration of electrochemical and
+            photochemical modalities into automated platforms with real-time analytical feedback.
+          </p>
+          <p>
+            Outside the lab, I enjoy bringing science to life through illustration, video editing, and
+            3D modelling. Some of my artwork has even made it onto the front covers of scientific
+            journals.
+          </p>
 
-      <section class="section" id="research">
-        <h2>Research</h2>
-        <p>
-          My research connects digital chemistry, robotic experimentation, electrochemical methods,
-          and materials discovery. I am interested in systems where hardware, chemical reactivity,
-          analytical feedback, and algorithmic decision-making can be treated as one programmable
-          experimental workflow.
-        </p>
-        <ul>
-          <li>Programmable electrochemistry and electro-photo-chemical platforms</li>
-          <li>Robotic workflows for reproducible chemical synthesis and analysis</li>
-          <li>Polyoxometalate materials, electrocatalysis, and energy-related chemistry</li>
-          <li>Data-rich experimental design for automated discovery</li>
-        </ul>
-      </section>
+          <div class="art-carousel" data-carousel aria-label="Selected scientific illustrations">
+            <div class="art-carousel__viewport" aria-live="polite">
+              <figure class="art-carousel__slide is-active" data-carousel-slide>
+                <div class="art-carousel__media">
+                  <img
+                    src="assets/publications/chemsuschem-cover.png"
+                    alt="ChemSusChem journal cover artwork designed by Melanie Guillén-Soler"
+                  />
+                </div>
+                <figcaption><em>ChemSusChem</em> cover artwork, 2021</figcaption>
+              </figure>
+              <figure class="art-carousel__slide" data-carousel-slide aria-hidden="true">
+                <div class="art-carousel__media">
+                  <img
+                    src="assets/publications/advanced-sustainable-systems-cover.png"
+                    alt="Advanced Sustainable Systems journal cover artwork designed by Melanie Guillén-Soler"
+                    loading="lazy"
+                  />
+                </div>
+                <figcaption><em>Advanced Sustainable Systems</em> cover artwork, 2024</figcaption>
+              </figure>
+              <figure class="art-carousel__slide" data-carousel-slide aria-hidden="true">
+                <div class="art-carousel__media">
+                  <img
+                    src="assets/illustrations/palladium-carbon-interface.png"
+                    alt="Scientific illustration of palladium sulfide on a carbon nanofibre interface"
+                    loading="lazy"
+                  />
+                </div>
+                <figcaption>Palladium-carbon catalytic interface illustration</figcaption>
+              </figure>
+              <figure class="art-carousel__slide" data-carousel-slide aria-hidden="true">
+                <div class="art-carousel__media">
+                  <img
+                    src="assets/illustrations/water-splitting-pathways.png"
+                    alt="Scientific illustration of catalytic hydrogen and oxygen evolution pathways"
+                    loading="lazy"
+                  />
+                </div>
+                <figcaption>Electrocatalytic water-splitting pathways</figcaption>
+              </figure>
+              <figure class="art-carousel__slide" data-carousel-slide aria-hidden="true">
+                <div class="art-carousel__media">
+                  <img
+                    src="assets/publications/electrochemputer-graphical-abstract.jpeg"
+                    alt="Graphical abstract for the ElectroChemputer publication"
+                    loading="lazy"
+                  />
+                </div>
+                <figcaption>ElectroChemputer graphical abstract</figcaption>
+              </figure>
+            </div>
 
-      <section class="section" id="updates">
-        <h2>Recent Updates</h2>
-        <ul class="updates-list">
-          <li>
-            <strong>2026:</strong> ElectroChemputer with integrated monitoring for programmable
-            electrochemistry published in <em>Chem</em>.
-          </li>
-          <li>
-            <strong>2025:</strong> Work on compression of molybdenum blue polyoxometalate cluster
-            rings published in <em>Journal of the American Chemical Society</em>.
-          </li>
-          <li>
-            <strong>2024:</strong> Algorithm-driven robotic discovery of polyoxometalate-scaffolding
-            metal-organic frameworks published in <em>Journal of the American Chemical Society</em>.
-          </li>
-        </ul>
-      </section>
+            <div class="art-carousel__controls">
+              <button type="button" data-carousel-previous aria-label="Previous illustration" title="Previous illustration">
+                &larr;
+              </button>
+              <div class="art-carousel__dots" data-carousel-dots aria-label="Choose an illustration"></div>
+              <button type="button" class="art-carousel__toggle" data-carousel-toggle aria-label="Pause automatic slideshow">
+                Pause
+              </button>
+              <button type="button" data-carousel-next aria-label="Next illustration" title="Next illustration">
+                &rarr;
+              </button>
+            </div>
+          </div>
+        </section>
 
-      <section class="section" id="publications">
-        <h2>Selected Publications</h2>
-        <ol class="publication-list">
-          <li class="publication-item">
-            <img
-              class="publication-item__image"
-              src="assets/publications/electrochemputer-graphical-abstract.jpeg"
-              alt="Graphical abstract for the ElectroChemputer publication"
-              loading="lazy"
-            />
-            <p class="publication-item__citation">
-              <a href="https://doi.org/10.1016/j.chempr.2025.102907" target="_blank" rel="noopener noreferrer">
-                ElectroChemputer with integrated monitoring for programmable electrochemistry
-              </a>.
-              <em>Chem</em>, 2026.
-            </p>
-          </li>
-          <li class="publication-item">
-            <p class="publication-item__citation">
-              <a href="https://doi.org/10.1021/jacs.5c00187" target="_blank" rel="noopener noreferrer">
-                Compression of molybdenum blue polyoxometalate cluster rings
-              </a>.
-              <em>Journal of the American Chemical Society</em>, 2025.
-            </p>
-          </li>
-          <li class="publication-item">
-            <p class="publication-item__citation">
-              <a href="https://doi.org/10.1002/advs.202505104" target="_blank" rel="noopener noreferrer">
-                Adaptive catalytic nanointerfaces for controlled hydrogen evolution: an in situ electrochemical approach
-              </a>.
-              <em>Advanced Science</em>, 2025.
-            </p>
-          </li>
-          <li class="publication-item">
-            <p class="publication-item__citation">
-              <a href="https://doi.org/10.1021/jacs.4c09553" target="_blank" rel="noopener noreferrer">
-                Algorithm-driven robotic discovery of polyoxometalate-scaffolding metal-organic frameworks
-              </a>.
-              <em>Journal of the American Chemical Society</em>, 2024.
-            </p>
-          </li>
-          <li class="publication-item">
-            <p class="publication-item__citation">
-              <a href="https://doi.org/10.1016/j.chempr.2024.07.032" target="_blank" rel="noopener noreferrer">
-                Reaction: Programmable chemputable click chemistry
-              </a>.
-              <em>Chem</em>, 2024.
-            </p>
-          </li>
-        </ol>
-        <p>
-          A full and regularly updated publication list is available through
-          <a href="https://scholar.google.com/citations?hl=en&amp;user=Dzg-OpQAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" target="_blank" rel="noopener noreferrer">
-            Google Scholar
-          </a>.
-        </p>
-      </section>
+        <section class="section" id="updates">
+          <h2>Recent Updates</h2>
+          <ul class="updates-list">
+            <li>
+              <strong>2026:</strong> ElectroChemputer with integrated monitoring for programmable
+              electrochemistry published in <em>Chem</em>.
+            </li>
+            <li>
+              <strong>2025:</strong> Work on compression of molybdenum blue polyoxometalate cluster
+              rings published in <em>Journal of the American Chemical Society</em>.
+            </li>
+            <li>
+              <strong>2024:</strong> Algorithm-driven robotic discovery of polyoxometalate-scaffolding
+              metal-organic frameworks published in <em>Journal of the American Chemical Society</em>.
+            </li>
+          </ul>
+        </section>
 
-      <section class="section" id="projects">
-        <h2>Projects</h2>
-        <p>
-          Selected research projects and associated resources will be collected here. For now, see my
-          <a href="https://github.com/melanieguillen" target="_blank" rel="noopener noreferrer">GitHub profile</a>
-          and linked research repositories.
-        </p>
-      </section>
+        <section class="section" id="contact">
+          <h2>Contact</h2>
+          <p>
+            Email:
+            <a href="mailto:Melanie.GuillenSoler@glasgow.ac.uk">Melanie.GuillenSoler@glasgow.ac.uk</a>
+          </p>
+        </section>
+      </div>
 
-      <section class="section" id="contact">
-        <h2>Contact</h2>
-        <p>
-          Email:
-          <a href="mailto:Melanie.GuillenSoler@glasgow.ac.uk">Melanie.GuillenSoler@glasgow.ac.uk</a>
-        </p>
-      </section>
+      <div class="site-view" id="publications" data-site-view="publications" hidden>
+        <section class="section">
+          <h2>Publications</h2>
+          <p class="section-intro">
+            Peer-reviewed publications and manuscripts listed in my current CV.
+          </p>
+
+          <h3>Published Research</h3>
+          <ol class="publication-list">
+            <li class="publication-item">
+              <p class="publication-item__title">
+                <a href="https://doi.org/10.1016/j.chempr.2025.102907" target="_blank" rel="noopener noreferrer">
+                  ElectroChemputer with Integrated Monitoring for Programmable Electrochemistry
+                </a>
+              </p>
+              <p class="publication-item__authors">
+                <strong>Melanie Guillén-Soler</strong>, Robert Rauschen, Kristine Laws, Abhishek Sharma,
+                Niclas Grocholski, Mark McNulty, and Leroy Cronin
+              </p>
+              <p class="publication-item__citation"><em>Chem</em>, 2026, 12, 102907.</p>
+            </li>
+            <li class="publication-item">
+              <p class="publication-item__title">
+                Support-Controlled Reaction Pathways via Dynamic Sulfur-Mediated Interfaces for
+                Selective Urea Electrolysis
+              </p>
+              <p class="publication-item__authors">
+                <strong>Melanie Guillén-Soler</strong>, Lucia Vizcaíno-Anaya, Ahmad Tayyebi,
+                José Manuel Vila-Fungueiriño, and María del Carmen Giménez-López
+              </p>
+              <p class="publication-item__citation"><em>Advanced Functional Materials</em>, 2026.</p>
+            </li>
+            <li class="publication-item">
+              <p class="publication-item__title">
+                POM-based Water Splitting Catalyst Under Acid Conditions Driven by its Assembly on
+                Carbon Nanotubes
+              </p>
+              <p class="publication-item__authors">
+                <strong>Melanie Guillén-Soler</strong>, Eugenia Quirós Díez, Carlos Herreros-Lucas,
+                Alejandro López Moreno, José Manuel Vila-Fungueiriño, Antonio Luis Llamas Sains,
+                Karol Strutynski, Manuel Melle Franco, and María del Carmen Giménez-López
+              </p>
+              <p class="publication-item__citation"><em>Advanced Materials</em>, 2025, e12902.</p>
+            </li>
+            <li class="publication-item">
+              <p class="publication-item__title">
+                <a href="https://doi.org/10.1002/advs.202505104" target="_blank" rel="noopener noreferrer">
+                  Adaptive Catalytic Nanointerfaces of Controlled Hydrogen Evolution: an in Situ
+                  Electrochemical Approach
+                </a>
+              </p>
+              <p class="publication-item__authors">
+                Carlos Herreros-Lucas, <strong>Melanie Guillén-Soler</strong>, Lucía Vizcaíno-Anaya,
+                Glen Murray, Mehtap Aygün, José Manuel Vila-Fungueiriño, and María del Carmen
+                Giménez-López
+              </p>
+              <p class="publication-item__citation"><em>Advanced Science</em>, 2025, 12, e05104.</p>
+            </li>
+            <li class="publication-item">
+              <p class="publication-item__title">
+                <a href="https://doi.org/10.1021/jacs.5c00187" target="_blank" rel="noopener noreferrer">
+                  Compression of Molybdenum Blue Polyoxometalate Cluster Rings
+                </a>
+              </p>
+              <p class="publication-item__authors">
+                Vishal Lakhanpal, <strong>Melanie Guillén-Soler</strong>, Laia Vilà-Nadal,
+                De-Liang Long, and Leroy Cronin
+              </p>
+              <p class="publication-item__citation">
+                <em>Journal of the American Chemical Society</em>, 2025, 147 (12), 10579-10586.
+              </p>
+            </li>
+            <li class="publication-item">
+              <p class="publication-item__title">
+                <a href="https://doi.org/10.1021/jacs.4c09553" target="_blank" rel="noopener noreferrer">
+                  Algorithm-driven robotic discovery of polyoxometalate-scaffolding metal-organic
+                  frameworks
+                </a>
+              </p>
+              <p class="publication-item__authors">
+                Donglin He, Yibin Jiang, <strong>Melanie Guillén-Soler</strong>, Zack Geary,
+                Lucia Vizcaíno-Anaya, Daniel Salley, María del Carmen Giménez-López, De-Liang Long,
+                and Leroy Cronin
+              </p>
+              <p class="publication-item__citation">
+                <em>Journal of the American Chemical Society</em>, 2024, 146 (42), 28952-28960.
+              </p>
+            </li>
+            <li class="publication-item">
+              <p class="publication-item__title">
+                <a href="https://doi.org/10.1016/j.chempr.2024.07.032" target="_blank" rel="noopener noreferrer">
+                  Programmable Chemputable Click Chemistry
+                </a>
+              </p>
+              <p class="publication-item__authors">
+                <strong>Melanie Guillén-Soler</strong> and Leroy Cronin
+              </p>
+              <p class="publication-item__citation"><em>Chem</em>, 2024, 10 (9), 2621-2623.</p>
+            </li>
+            <li class="publication-item">
+              <p class="publication-item__title">
+                A Hierarchical Polyoxometalate/Pd/MoS2 Hybrid: Developing an Efficient Novel
+                Bifunctional Catalyst for Water Splitting
+              </p>
+              <p class="publication-item__authors">
+                <strong>Melanie Guillén-Soler</strong>, Natalia V. Vassilyeva, Eugenia Pilar
+                Quirós-Díez, Jose M. Vila-Fungueiriño, Alicia Forment-Aliaga, and María del Carmen
+                Giménez-López
+              </p>
+              <p class="publication-item__citation">
+                <em>Advanced Sustainable Systems</em>, 2023, 8 (5), 2300607.
+              </p>
+            </li>
+            <li class="publication-item">
+              <p class="publication-item__title">
+                Mechanical interlocking of SWCNTs with N-rich macrocycles for efficient ORR
+                electrocatalysis
+              </p>
+              <p class="publication-item__authors">
+                Wanzheng Zhang, <strong>Melanie Guillén-Soler</strong>, Sara Moreno-Da Silva,
+                Alejandro López-Moreno, Luisa R. González, María del Carmen Giménez-López, and
+                Emilio M. Pérez
+              </p>
+              <p class="publication-item__citation">
+                <em>Chemical Science</em>, 2022, 13 (33), 9706-9712.
+              </p>
+            </li>
+            <li class="publication-item">
+              <p class="publication-item__title">
+                Palladium Nanoparticles Hardwired in Carbon Nanoreactors Enable Continually Increasing
+                Electrocatalytic Activity During the Hydrogen Evolution Reaction
+              </p>
+              <p class="publication-item__authors">
+                <strong>Melanie Guillén-Soler</strong>, Mehtap Aygün, Jose M. Vila-Fungueiriño,
+                Abdullah Kurtoglu, Thomas W. Chamberlain, Andrei N. Khlobystov, and María del Carmen
+                Giménez-López
+              </p>
+              <p class="publication-item__citation">
+                <em>ChemSusChem</em>, 2021, 14 (22), 4973-4984.
+              </p>
+            </li>
+          </ol>
+
+          <h3>Submitted Manuscripts</h3>
+          <ol class="publication-list publication-list--submitted">
+            <li class="publication-item">
+              <p class="publication-item__title">
+                Stabilization of molecular electrocatalysts using mechanically interlocked carbon
+                nanotubes
+              </p>
+              <p class="publication-item__authors">
+                <strong>Melanie Guillén-Soler</strong>, Albert Masip-Sánchez, Manuel Pérez-Escribano,
+                Eugenia P. Quirós-Diez, Sara Moreno Da Silva, Joaquín Calbo, Luisa Ruiz-González,
+                Alejandro López-Moreno, María del Carmen Giménez-López, Josep M. Poblet, Enrique Ortí,
+                and Emilio M. Perez
+              </p>
+              <p class="publication-item__citation">Submitted, 2026.</p>
+            </li>
+            <li class="publication-item">
+              <p class="publication-item__title">
+                A Programmable Robotic System for Electro-Photo-Chemical Reactions
+              </p>
+              <p class="publication-item__authors">
+                <strong>Melanie Guillén-Soler</strong>, Niclas Grocholski, Christian Knittl-Frank,
+                Abhishek Sharma, Mark McNulty, and Leroy Cronin
+              </p>
+              <p class="publication-item__citation">Submitted, 2026.</p>
+            </li>
+            <li class="publication-item">
+              <p class="publication-item__title">
+                Fivefold-Symmetry-Directed Assembly of Giant Molybdenum Red Clusters with Hollow
+                Architectures and High Proton Conductivity
+              </p>
+              <p class="publication-item__authors">
+                Xiaodan Jia, Vishal Lakhanpal, <strong>Melanie Guillén-Soler</strong>, Chunmei Zhu,
+                Yubin Ma, Rongqing Tang, Xuanze Meng, De-Liang Long, Leroy Cronin, and Weimin Xuan
+              </p>
+              <p class="publication-item__citation">Submitted, 2026.</p>
+            </li>
+          </ol>
+
+          <p class="publication-note">
+            A regularly updated record is also available through
+            <a href="https://scholar.google.com/citations?hl=en&amp;user=Dzg-OpQAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" target="_blank" rel="noopener noreferrer">
+              Google Scholar
+            </a>.
+          </p>
+        </section>
+
+        <section class="section" id="patents">
+          <h2>Patents</h2>
+          <ol class="patent-list">
+            <li>
+              <strong>ES-2796448_B2. Battery Compound.</strong>
+              María del Carmen Giménez López, Eugenia Pilar Quirós Díez, and Melanie Guillén-Soler.
+            </li>
+            <li>
+              <strong>ES-2952195_B2. Dispositivo de monitorización de gases automatizada y en tiempo real (CEMDRA).</strong>
+              María del Carmen Giménez López, Víctor Leborán Álvarez, Carlos Herreros Lucas, and
+              Melanie Guillén-Soler.
+            </li>
+          </ol>
+        </section>
+      </div>
+
+      <div class="site-view" id="projects" data-site-view="projects" hidden>
+        <section class="section" id="research">
+          <h2>Research</h2>
+          <p>
+            My research connects digital chemistry, robotic experimentation, electrochemical methods,
+            and materials discovery. I am interested in systems where hardware, chemical reactivity,
+            analytical feedback, and algorithmic decision-making can be treated as one programmable
+            experimental workflow.
+          </p>
+          <ul>
+            <li>Programmable electrochemistry and electro-photo-chemical platforms</li>
+            <li>Robotic workflows for reproducible chemical synthesis and analysis</li>
+            <li>Polyoxometalate materials, electrocatalysis, and energy-related chemistry</li>
+            <li>Data-rich experimental design for automated discovery</li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h2>Projects</h2>
+          <p>
+            Selected project pages, data, and code repositories will be added here. Current public
+            resources are available through my
+            <a href="https://github.com/melanieguillen" target="_blank" rel="noopener noreferrer">GitHub profile</a>.
+          </p>
+        </section>
+      </div>
     </main>
   </div>
 
@@ -245,6 +444,6 @@
     </p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=3"></script>
 </body>
 </html>
