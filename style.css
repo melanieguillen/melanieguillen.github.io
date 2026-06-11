@@ -130,10 +130,10 @@ a:hover {
 
 .author-profile__image {
   display: block;
-  width: 132%;
+  width: 120%;
   max-width: none;
   height: auto;
-  transform: translate(-24%, -19%);
+  transform: translate(-20%, -10%);
 }
 
 .author-profile h1 {
