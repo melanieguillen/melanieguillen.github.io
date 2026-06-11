@@ -119,15 +119,21 @@ a:hover {
   font-size: 0.92rem;
 }
 
-.author-profile__image {
+.author-profile__portrait {
   width: 190px;
   max-width: 100%;
   aspect-ratio: 1;
-  object-fit: cover;
-  object-position: 61% 18%;
   border-radius: 50%;
-  display: block;
+  overflow: hidden;
   margin-bottom: 1.1rem;
+}
+
+.author-profile__image {
+  display: block;
+  width: 132%;
+  max-width: none;
+  height: auto;
+  transform: translate(-24%, -19%);
 }
 
 .author-profile h1 {
@@ -404,7 +410,7 @@ a:hover {
     align-items: start;
   }
 
-  .author-profile__image {
+  .author-profile__portrait {
     width: 116px;
     grid-row: span 4;
   }
@@ -433,7 +439,7 @@ a:hover {
     grid-template-columns: 96px minmax(0, 1fr);
   }
 
-  .author-profile__image {
+  .author-profile__portrait {
     width: 96px;
   }
 
