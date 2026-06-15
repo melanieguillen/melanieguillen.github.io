@@ -180,6 +180,29 @@ if (carousel) {
   startAutoAdvance();
 }
 
+const videoTrigger = document.querySelector("[data-video-trigger]");
+
+if (videoTrigger) {
+  videoTrigger.addEventListener("click", () => {
+    const videoId = videoTrigger.dataset.videoId;
+    const videoFrame = videoTrigger.closest(".featured-video__frame");
+
+    if (!videoId || !videoFrame) {
+      return;
+    }
+
+    const iframe = document.createElement("iframe");
+    iframe.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(videoId)}?autoplay=1&rel=0`;
+    iframe.title = "Pushing the Boundaries of Digital Chemistry";
+    iframe.allow =
+      "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+    iframe.referrerPolicy = "strict-origin-when-cross-origin";
+    iframe.allowFullscreen = true;
+
+    videoFrame.replaceChildren(iframe);
+  });
+}
+
 const yearNode = document.getElementById("year");
 if (yearNode) {
   yearNode.textContent = new Date().getFullYear();

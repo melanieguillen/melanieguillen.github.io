@@ -17,7 +17,7 @@
     gtag("config", "G-Z47QRTXQ1N");
   </script>
 
-  <link rel="stylesheet" href="style.css?v=8" />
+  <link rel="stylesheet" href="style.css?v=9" />
 </head>
 <body>
   <header class="masthead">
@@ -177,14 +177,22 @@
           <div class="featured-video">
             <h3>Pushing the Boundaries of Digital Chemistry</h3>
             <div class="featured-video__frame">
-              <iframe
-                src="https://www.youtube-nocookie.com/embed/xAt3PUJclLk"
-                title="Pushing the Boundaries of Digital Chemistry"
-                loading="lazy"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              ></iframe>
+              <button
+                class="featured-video__preview"
+                type="button"
+                data-video-trigger
+                data-video-id="xAt3PUJclLk"
+                aria-label="Play Pushing the Boundaries of Digital Chemistry"
+              >
+                <img
+                  src="assets/video/digital-chemistry-preview.jpg"
+                  alt=""
+                  width="1280"
+                  height="720"
+                  loading="lazy"
+                />
+                <span class="featured-video__play" aria-hidden="true">▶</span>
+              </button>
             </div>
           </div>
         </section>
@@ -435,6 +443,6 @@
     </p>
   </footer>
 
-  <script src="script.js?v=3"></script>
+  <script src="script.js?v=4"></script>
 </body>
 </html>
