@@ -430,6 +430,14 @@ a:hover {
   margin-bottom: 0.9rem;
 }
 
+.projects-photo {
+  display: block;
+  width: min(100%, 720px);
+  height: auto;
+  margin-top: 1.25rem;
+  border: 1px solid var(--border);
+}
+
 .site-footer {
   border-top: 1px solid var(--border);
   color: var(--muted);
