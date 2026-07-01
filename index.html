@@ -17,67 +17,68 @@
     gtag("config", "G-Z47QRTXQ1N");
   </script>
 
-  <link rel="stylesheet" href="style.css?v=11" />
+  <link rel="stylesheet" href="style.css?v=12" />
 </head>
 <body>
-  <header class="masthead">
-    <div class="masthead__inner">
-      <a class="site-title" href="#home">Melanie Guillén Soler</a>
-      <button class="menu-toggle" type="button" aria-label="Toggle navigation" data-menu-button>
-        Menu
-      </button>
-      <nav class="masthead__nav" aria-label="Primary navigation" data-sidebar>
-        <a href="#home" data-view-link="home">Home</a>
-        <a href="#publications" data-view-link="publications">Publications</a>
-        <a href="#projects" data-view-link="projects">Projects</a>
-      </nav>
+  <header class="site-hero" id="top">
+    <div class="site-hero__image" role="img" aria-label="Melanie Guillén Soler working with a robotic chemistry platform"></div>
+    <div class="site-hero__shade"></div>
+    <div class="site-hero__content">
+      <p class="site-hero__eyebrow">Digital Chemistry | Automation | Electrosynthesis</p>
+      <h1>Melanie Guillén Soler</h1>
+      <p>Research Fellow at the University of Glasgow</p>
     </div>
   </header>
 
-  <div class="page">
-    <aside class="author-profile">
-      <div class="author-profile__portrait">
-        <img
-          class="author-profile__image"
-          src="assets/profile.jpeg"
-          alt="Portrait of Melanie Guillén Soler"
-        />
+  <nav class="site-nav-bar" aria-label="Primary navigation">
+    <div class="site-nav-bar__inner">
+      <button class="menu-toggle" type="button" aria-label="Toggle navigation" data-menu-button>
+        Menu
+      </button>
+      <div class="masthead__nav" data-sidebar>
+        <a href="#home" data-view-link="home">Home</a>
+        <a href="#publications" data-view-link="publications">Publications</a>
+        <a href="#projects" data-view-link="projects">Projects</a>
       </div>
-      <h1>Melanie Guillén Soler</h1>
-      <p class="author-profile__role">Research Fellow at the University of Glasgow</p>
-      <p class="author-profile__bio">
-        Digital chemistry, electrochemistry automation, and programmable chemical systems.
-      </p>
+    </div>
+  </nav>
 
-      <ul class="author-links" aria-label="Profile links">
-        <li>Glasgow, United Kingdom</li>
-        <li><a href="mailto:Melanie.GuillenSoler@glasgow.ac.uk">Email</a></li>
-        <li>
-          <a href="https://www.linkedin.com/in/melanie-guillen-542899145/?locale=es" target="_blank" rel="noopener noreferrer">
-            LinkedIn
-          </a>
-        </li>
-        <li>
-          <a href="https://scholar.google.com/citations?hl=en&amp;user=Dzg-OpQAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" target="_blank" rel="noopener noreferrer">
-            Google Scholar
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/melanieguillen" target="_blank" rel="noopener noreferrer">
-            GitHub
-          </a>
-        </li>
-        <li>
-          <a href="https://www.gla.ac.uk/schools/chemistry/staff/melanieguillensoler/" target="_blank" rel="noopener noreferrer">
-            University profile
-          </a>
-        </li>
-      </ul>
-    </aside>
-
-    <main class="page-content">
+  <main class="page">
       <div class="site-view is-active" id="home" data-site-view="home">
-        <section class="section" id="about">
+        <section class="section home-profile" id="about">
+          <figure class="home-profile__portrait">
+            <img
+              src="assets/profile.jpeg"
+              alt="Portrait of Melanie Guillén Soler"
+              width="356"
+              height="484"
+            />
+          </figure>
+          <div class="home-profile__copy">
+            <p class="section-kicker">Research profile</p>
+            <h2>Digital chemistry, automation, and electrochemical discovery</h2>
+            <p class="home-profile__lead">
+              I am a Research Fellow at the University of Glasgow working at the interface of
+              digital chemistry, electrochemistry automation, and programmable chemical systems.
+            </p>
+            <ul class="profile-links" aria-label="Profile links">
+              <li>Glasgow, United Kingdom</li>
+              <li><a href="mailto:Melanie.GuillenSoler@glasgow.ac.uk">Email</a></li>
+              <li>
+                <a href="https://scholar.google.com/citations?hl=en&amp;user=Dzg-OpQAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" target="_blank" rel="noopener noreferrer">
+                  Google Scholar
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/melanieguillen" target="_blank" rel="noopener noreferrer">
+                  GitHub
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section text-section" id="track-record">
           <h2>About Me</h2>
           <p>
             My career has strategically built an interdisciplinary profile at the forefront of digital
@@ -106,76 +107,42 @@
             3D modelling. Some of my artwork has even made it onto the front covers of scientific
             journals.
           </p>
+        </section>
 
-          <div class="art-carousel" data-carousel aria-label="Selected scientific illustrations">
-            <div class="art-carousel__viewport" aria-live="polite">
-              <figure class="art-carousel__slide is-active" data-carousel-slide>
-                <div class="art-carousel__media">
-                  <img
-                    src="assets/publications/chemsuschem-cover.png"
-                    alt="ChemSusChem journal cover artwork designed by Melanie Guillén Soler"
-                  />
-                </div>
-                <figcaption><em>ChemSusChem</em> cover artwork, 2021</figcaption>
-              </figure>
-              <figure class="art-carousel__slide" data-carousel-slide aria-hidden="true">
-                <div class="art-carousel__media">
-                  <img
-                    src="assets/publications/advanced-sustainable-systems-cover.png"
-                    alt="Advanced Sustainable Systems journal cover artwork designed by Melanie Guillén Soler"
-                    loading="lazy"
-                  />
-                </div>
-                <figcaption><em>Advanced Sustainable Systems</em> cover artwork, 2024</figcaption>
-              </figure>
-              <figure class="art-carousel__slide" data-carousel-slide aria-hidden="true">
-                <div class="art-carousel__media">
-                  <img
-                    src="assets/illustrations/palladium-carbon-interface.png"
-                    alt="Scientific illustration of palladium sulfide on a carbon nanofibre interface"
-                    loading="lazy"
-                  />
-                </div>
-                <figcaption>Palladium-carbon catalytic interface illustration</figcaption>
-              </figure>
-              <figure class="art-carousel__slide" data-carousel-slide aria-hidden="true">
-                <div class="art-carousel__media">
-                  <img
-                    src="assets/illustrations/water-splitting-pathways.png"
-                    alt="Scientific illustration of catalytic hydrogen and oxygen evolution pathways"
-                    loading="lazy"
-                  />
-                </div>
-                <figcaption>Electrocatalytic water-splitting pathways</figcaption>
-              </figure>
-              <figure class="art-carousel__slide" data-carousel-slide aria-hidden="true">
-                <div class="art-carousel__media">
-                  <img
-                    src="assets/publications/electrochemputer-graphical-abstract.jpeg"
-                    alt="Graphical abstract for the ElectroChemputer publication"
-                    loading="lazy"
-                  />
-                </div>
-                <figcaption>ElectroChemputer graphical abstract</figcaption>
-              </figure>
-            </div>
-
-            <div class="art-carousel__controls">
-              <button type="button" data-carousel-previous aria-label="Previous illustration" title="Previous illustration">
-                &larr;
-              </button>
-              <div class="art-carousel__dots" data-carousel-dots aria-label="Choose an illustration"></div>
-              <button type="button" class="art-carousel__toggle" data-carousel-toggle aria-label="Pause automatic slideshow">
-                Pause
-              </button>
-              <button type="button" data-carousel-next aria-label="Next illustration" title="Next illustration">
-                &rarr;
-              </button>
-            </div>
+        <section class="section cover-artwork" id="cover-artwork">
+          <p class="section-kicker">Scientific illustration</p>
+          <h2>Cover Artwork</h2>
+          <p>
+            Selected journal cover artwork and visual pieces developed alongside my research.
+          </p>
+          <div class="cover-gallery" aria-label="Selected scientific cover artwork">
+            <figure>
+              <img
+                src="assets/publications/chemsuschem-cover.png"
+                alt="ChemSusChem journal cover artwork designed by Melanie Guillén Soler"
+                width="356"
+                height="470"
+                loading="lazy"
+              />
+              <figcaption><em>ChemSusChem</em> cover artwork, 2021</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="assets/publications/advanced-sustainable-systems-cover.png"
+                alt="Advanced Sustainable Systems journal cover artwork designed by Melanie Guillén Soler"
+                width="356"
+                height="472"
+                loading="lazy"
+              />
+              <figcaption><em>Advanced Sustainable Systems</em> cover artwork, 2024</figcaption>
+            </figure>
           </div>
+        </section>
 
+        <section class="section">
           <div class="featured-video">
-            <h3>Pushing the Boundaries of Digital Chemistry</h3>
+            <p class="section-kicker">Video</p>
+            <h2>Pushing the Boundaries of Digital Chemistry</h2>
             <div class="featured-video__frame">
               <button
                 class="featured-video__preview"
@@ -228,6 +195,23 @@
             Email:
             <a href="mailto:Melanie.GuillenSoler@glasgow.ac.uk">Melanie.GuillenSoler@glasgow.ac.uk</a>
           </p>
+          <ul class="contact-links">
+            <li>
+              <a href="https://www.linkedin.com/in/melanie-guillen-542899145/?locale=es" target="_blank" rel="noopener noreferrer">
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a href="https://scholar.google.com/citations?hl=en&amp;user=Dzg-OpQAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" target="_blank" rel="noopener noreferrer">
+                Google Scholar
+              </a>
+            </li>
+            <li>
+              <a href="https://www.gla.ac.uk/schools/chemistry/staff/melanieguillensoler/" target="_blank" rel="noopener noreferrer">
+                University profile
+              </a>
+            </li>
+          </ul>
         </section>
       </div>
 
@@ -512,8 +496,7 @@
           />
         </section>
       </div>
-    </main>
-  </div>
+  </main>
 
   <footer class="site-footer">
     <p>
@@ -521,6 +504,6 @@
     </p>
   </footer>
 
-  <script src="script.js?v=4"></script>
+  <script src="script.js?v=5"></script>
 </body>
 </html>

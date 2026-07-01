@@ -2,6 +2,7 @@ const sidebar = document.querySelector("[data-sidebar]");
 const menuButton = document.querySelector("[data-menu-button]");
 const navLinks = [...document.querySelectorAll("[data-view-link]")];
 const siteViews = [...document.querySelectorAll("[data-site-view]")];
+const pageContent = document.querySelector(".page");
 
 const closeMenu = () => {
   if (!sidebar) {
@@ -44,6 +45,8 @@ const setActiveLink = (viewId) => {
 const routeToView = {
   home: "home",
   about: "home",
+  "track-record": "home",
+  "cover-artwork": "home",
   updates: "home",
   contact: "home",
   publications: "publications",
@@ -52,7 +55,16 @@ const routeToView = {
   research: "projects",
 };
 
-function showView(route, scrollToTop = false) {
+function scrollToPageContent(behavior = "auto") {
+  if (pageContent) {
+    pageContent.scrollIntoView({ behavior, block: "start" });
+    return;
+  }
+
+  window.scrollTo({ top: 0, behavior });
+}
+
+function showView(route, scrollToContent = false) {
   const viewId = routeToView[route] || "home";
 
   siteViews.forEach((view) => {
@@ -63,8 +75,13 @@ function showView(route, scrollToTop = false) {
 
   setActiveLink(viewId);
 
-  if (scrollToTop || route === viewId) {
-    window.scrollTo({ top: 0, behavior: scrollToTop ? "smooth" : "auto" });
+  if (scrollToContent) {
+    requestAnimationFrame(() => scrollToPageContent("smooth"));
+    return;
+  }
+
+  if (route === viewId) {
+    window.scrollTo({ top: 0, behavior: "auto" });
     return;
   }
 
