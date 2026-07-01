@@ -17,7 +17,7 @@
     gtag("config", "G-Z47QRTXQ1N");
   </script>
 
-  <link rel="stylesheet" href="style.css?v=14" />
+  <link rel="stylesheet" href="style.css?v=15" />
 </head>
 <body>
   <header class="site-hero" id="top">
@@ -115,47 +115,60 @@
           <p>
             Selected journal cover artwork and visual pieces developed alongside my research.
           </p>
-          <div class="cover-gallery" aria-label="Selected scientific cover artwork">
-            <figure>
-              <img
-                src="assets/publications/chemsuschem-cover.png"
-                alt="ChemSusChem journal cover artwork designed by Melanie Guillén Soler"
-                width="356"
-                height="470"
-                loading="lazy"
-              />
-              <figcaption><em>ChemSusChem</em> cover artwork, 2021</figcaption>
-            </figure>
-            <figure>
-              <img
-                src="assets/publications/advanced-sustainable-systems-cover.png"
-                alt="Advanced Sustainable Systems journal cover artwork designed by Melanie Guillén Soler"
-                width="356"
-                height="472"
-                loading="lazy"
-              />
-              <figcaption><em>Advanced Sustainable Systems</em> cover artwork, 2024</figcaption>
-            </figure>
-            <figure class="cover-gallery__figure--toc">
-              <img
-                src="assets/publications/electrochemputer-graphical-abstract.jpeg"
-                alt="Graphical abstract for the ElectroChemputer publication"
-                width="375"
-                height="375"
-                loading="lazy"
-              />
-              <figcaption>ElectroChemputer graphical abstract</figcaption>
-            </figure>
-            <figure class="cover-gallery__figure--toc">
-              <img
-                src="assets/publications/toc-robotic-pomof-discovery.jpg"
-                alt="Graphical abstract of algorithm-driven robotic discovery of POM-based metal-organic frameworks"
-                width="728"
-                height="413"
-                loading="lazy"
-              />
-              <figcaption>Algorithm-driven robotic POMOF discovery graphical abstract</figcaption>
-            </figure>
+          <div class="artwork-carousel" data-carousel aria-label="Selected scientific cover artwork">
+            <div class="artwork-carousel__viewport" aria-live="polite">
+              <div class="artwork-carousel__track" data-carousel-track>
+                <figure class="artwork-carousel__slide is-active" data-carousel-slide>
+                  <img
+                    src="assets/publications/chemsuschem-cover.png"
+                    alt="ChemSusChem journal cover artwork designed by Melanie Guillén Soler"
+                    width="356"
+                    height="470"
+                  />
+                  <figcaption><em>ChemSusChem</em> cover artwork, 2021</figcaption>
+                </figure>
+                <figure class="artwork-carousel__slide" data-carousel-slide aria-hidden="true">
+                  <img
+                    src="assets/publications/advanced-sustainable-systems-cover.png"
+                    alt="Advanced Sustainable Systems journal cover artwork designed by Melanie Guillén Soler"
+                    width="356"
+                    height="472"
+                  />
+                  <figcaption><em>Advanced Sustainable Systems</em> cover artwork, 2024</figcaption>
+                </figure>
+                <figure class="artwork-carousel__slide" data-carousel-slide aria-hidden="true">
+                  <img
+                    src="assets/publications/electrochemputer-graphical-abstract.jpeg"
+                    alt="Graphical abstract for the ElectroChemputer publication"
+                    width="375"
+                    height="375"
+                  />
+                  <figcaption>ElectroChemputer graphical abstract</figcaption>
+                </figure>
+                <figure class="artwork-carousel__slide" data-carousel-slide aria-hidden="true">
+                  <img
+                    src="assets/publications/toc-robotic-pomof-discovery.jpg"
+                    alt="Graphical abstract of algorithm-driven robotic discovery of POM-based metal-organic frameworks"
+                    width="728"
+                    height="413"
+                  />
+                  <figcaption>Algorithm-driven robotic POMOF discovery graphical abstract</figcaption>
+                </figure>
+              </div>
+            </div>
+
+            <div class="artwork-carousel__controls">
+              <button type="button" data-carousel-previous aria-label="Previous artwork" title="Previous artwork">
+                &larr;
+              </button>
+              <div class="artwork-carousel__dots" data-carousel-dots aria-label="Choose artwork"></div>
+              <button type="button" class="artwork-carousel__toggle" data-carousel-toggle aria-label="Pause automatic artwork carousel">
+                Pause
+              </button>
+              <button type="button" data-carousel-next aria-label="Next artwork" title="Next artwork">
+                &rarr;
+              </button>
+            </div>
           </div>
         </section>
 

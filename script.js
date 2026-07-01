@@ -105,6 +105,7 @@ const carousel = document.querySelector("[data-carousel]");
 
 if (carousel) {
   const slides = [...carousel.querySelectorAll("[data-carousel-slide]")];
+  const track = carousel.querySelector("[data-carousel-track]");
   const previousButton = carousel.querySelector("[data-carousel-previous]");
   const nextButton = carousel.querySelector("[data-carousel-next]");
   const toggleButton = carousel.querySelector("[data-carousel-toggle]");
@@ -117,7 +118,7 @@ if (carousel) {
   const dots = slides.map((_, index) => {
     const dot = document.createElement("button");
     dot.type = "button";
-    dot.setAttribute("aria-label", `Show illustration ${index + 1}`);
+    dot.setAttribute("aria-label", `Show artwork ${index + 1}`);
     dot.addEventListener("click", () => {
       showSlide(index);
       restartAutoAdvance();
@@ -133,6 +134,9 @@ if (carousel) {
       slide.classList.toggle("is-active", isActive);
       slide.setAttribute("aria-hidden", String(!isActive));
     });
+    if (track) {
+      track.style.transform = `translateX(-${currentSlide * 100}%)`;
+    }
     dots.forEach((dot, dotIndex) => {
       dot.classList.toggle("is-active", dotIndex === currentSlide);
     });
