@@ -553,10 +553,33 @@ a:hover {
   font-size: 0.86rem;
 }
 
-.site-footer p {
+.site-footer__inner {
+  display: flex;
   width: min(100% - 40px, var(--max-width));
   margin: 0 auto;
   padding: 1.35rem 0;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.visit-counter {
+  display: inline-flex;
+  align-items: center;
+  opacity: 0.88;
+}
+
+.visit-counter:hover,
+.visit-counter:focus-visible {
+  opacity: 1;
+}
+
+.visit-counter img {
+  display: block;
 }
 
 @media (max-width: 820px) {
@@ -622,8 +645,13 @@ a:hover {
   .site-hero__content,
   .site-nav-bar__inner,
   .page,
-  .site-footer p {
+  .site-footer__inner {
     width: min(100% - 28px, var(--max-width));
+  }
+
+  .site-footer__inner {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .site-hero__eyebrow {
