@@ -617,10 +617,16 @@ a:hover {
   padding-inline: 1rem;
 }
 
-.linkedin-post > p {
+.linkedin-post > p,
+.linkedin-post__body {
   color: #333;
   font-size: 0.93rem;
   line-height: 1.52;
+}
+
+.linkedin-post__body {
+  margin: 0.2rem 0 0.85rem !important;
+  white-space: pre-line;
 }
 
 .linkedin-post__media {
