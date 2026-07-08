@@ -78,6 +78,8 @@ function showView(route, scrollToContent = false) {
 
   setActiveLink(viewId);
 
+  requestAnimationFrame(() => setupLinkedInPostBodies());
+
   if (scrollToContent) {
     requestAnimationFrame(() => scrollToPageContent("smooth"));
     return;
@@ -103,6 +105,61 @@ const applyRoute = () => {
 window.addEventListener("hashchange", applyRoute);
 window.addEventListener("popstate", applyRoute);
 applyRoute();
+
+function setupLinkedInPostBodies() {
+  const bodies = [...document.querySelectorAll(".linkedin-post__body")];
+
+  bodies.forEach((body, index) => {
+    const existingButton = body.nextElementSibling?.classList.contains("linkedin-post__more")
+      ? body.nextElementSibling
+      : null;
+
+    if (body.dataset.expanded === "true") {
+      body.classList.remove("is-collapsed");
+      if (existingButton) {
+        existingButton.remove();
+      }
+      return;
+    }
+
+    body.classList.remove("is-collapsed");
+    if (existingButton) {
+      existingButton.remove();
+    }
+
+    const styles = window.getComputedStyle(body);
+    const fontSize = Number.parseFloat(styles.fontSize) || 15;
+    const lineHeight = Number.parseFloat(styles.lineHeight) || fontSize * 1.52;
+    const maxHeight = lineHeight * 4;
+
+    if (body.scrollHeight <= maxHeight + 2) {
+      return;
+    }
+
+    body.classList.add("is-collapsed");
+
+    const moreButton = document.createElement("button");
+    moreButton.type = "button";
+    moreButton.className = "linkedin-post__more";
+    moreButton.textContent = "more";
+    moreButton.setAttribute("aria-expanded", "false");
+    moreButton.setAttribute("aria-controls", `linkedin-post-body-${index + 1}`);
+
+    if (!body.id) {
+      body.id = `linkedin-post-body-${index + 1}`;
+    }
+
+    moreButton.addEventListener("click", () => {
+      body.dataset.expanded = "true";
+      body.classList.remove("is-collapsed");
+      moreButton.remove();
+    });
+
+    body.insertAdjacentElement("afterend", moreButton);
+  });
+}
+
+setupLinkedInPostBodies();
 
 const carousel = document.querySelector("[data-carousel]");
 
@@ -236,4 +293,6 @@ window.addEventListener("resize", () => {
   if (window.innerWidth > 1100) {
     closeMenu();
   }
+
+  setupLinkedInPostBodies();
 });

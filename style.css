@@ -629,6 +629,33 @@ a:hover {
   white-space: pre-line;
 }
 
+.linkedin-post__body.is-collapsed {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+
+.linkedin-post__more {
+  display: inline-flex;
+  width: max-content;
+  margin: -0.25rem 1rem 0.85rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #666;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.linkedin-post__more:hover,
+.linkedin-post__more:focus-visible {
+  color: #0a66c2;
+  text-decoration: underline;
+}
+
 .linkedin-post__media {
   display: flex;
   aspect-ratio: 4 / 3;
