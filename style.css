@@ -466,6 +466,112 @@ a:hover {
   color: var(--text);
 }
 
+.news-page {
+  min-height: 560px;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(300px, 0.75fr);
+  gap: clamp(2rem, 5vw, 3rem);
+  align-items: start;
+}
+
+.news-updates h2,
+.social-feed__heading h2 {
+  margin-bottom: 1.4rem;
+}
+
+.news-update,
+.linkedin-post {
+  background: rgba(255, 255, 255, 0.62);
+  border: 1px solid rgba(122, 108, 92, 0.22);
+  box-shadow: 0 14px 30px rgba(88, 72, 54, 0.1);
+}
+
+.news-update {
+  padding: clamp(1.35rem, 3vw, 2rem);
+}
+
+.news-update__meta,
+.linkedin-post__source {
+  margin: 0 0 0.65rem !important;
+  color: var(--accent);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.news-update h3,
+.linkedin-post h3 {
+  margin: 0 0 0.65rem;
+  color: var(--text);
+  font-size: 1.18rem;
+  line-height: 1.28;
+}
+
+.news-update p:last-child,
+.linkedin-post p:last-child {
+  margin-bottom: 0;
+}
+
+.social-feed {
+  display: grid;
+  gap: 1rem;
+}
+
+.social-feed__intro {
+  margin: -0.15rem 0 0.1rem !important;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.social-feed__heading {
+  display: flex;
+  min-height: 56px;
+  padding: 0 1rem;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--nav);
+  color: #fff;
+}
+
+.social-feed__heading span {
+  display: inline-grid;
+  width: 28px;
+  height: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  color: #fff;
+  font-weight: 800;
+  line-height: 1;
+  place-items: center;
+}
+
+.social-feed__heading h2 {
+  margin: 0;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.linkedin-post {
+  padding: 1.25rem;
+}
+
+.linkedin-post__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.9rem;
+  margin-top: 0.35rem;
+}
+
+.linkedin-post__links a {
+  display: inline-flex;
+  font-weight: 800;
+}
+
 .section .publication-list {
   margin: 0;
   padding-left: 2rem;
@@ -634,6 +740,10 @@ a:hover {
 
   .artwork-carousel {
     max-width: 100%;
+  }
+
+  .news-grid {
+    grid-template-columns: 1fr;
   }
 }
 
