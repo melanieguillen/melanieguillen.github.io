@@ -765,6 +765,7 @@ a:hover {
 .publication-item__citation {
   margin-top: 0.2rem !important;
   font-size: 0.9rem;
+  overflow-wrap: anywhere;
 }
 
 .publication-item__toc {
