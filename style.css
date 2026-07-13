@@ -769,13 +769,14 @@ a:hover {
 }
 
 .publication-item__toc {
-  display: flex;
-  width: min(100%, 620px);
-  min-height: 110px;
+  display: inline-flex;
+  width: fit-content;
+  max-width: min(100%, 780px);
   margin: 1rem auto 0;
-  padding: 0.55rem;
+  padding: 0.25rem;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
   border: 1px solid var(--border);
   background: #fff;
 }
@@ -785,12 +786,19 @@ a:hover {
   width: auto;
   max-width: 100%;
   height: auto;
-  max-height: 240px;
+  max-height: 420px;
   object-fit: contain;
 }
 
 .publication-item__toc--cover img {
-  max-height: 280px;
+  max-height: 460px;
+}
+
+@media (max-width: 640px) {
+  .publication-item__toc img,
+  .publication-item__toc--cover img {
+    max-height: 340px;
+  }
 }
 
 .patent-list {
