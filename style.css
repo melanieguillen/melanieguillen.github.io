@@ -688,6 +688,32 @@ a:hover {
   object-fit: cover;
 }
 
+.linkedin-post__link-preview {
+  display: grid;
+  padding: 0.9rem 1rem;
+  border-top: 1px solid #e5e3df;
+  border-bottom: 1px solid #e5e3df;
+  background: #f3f2ef;
+  color: #191919;
+  gap: 0.2rem;
+}
+
+.linkedin-post__link-preview strong {
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.linkedin-post__link-preview span {
+  color: #666;
+  font-size: 0.8rem;
+}
+
+.linkedin-post__link-preview:hover strong,
+.linkedin-post__link-preview:focus-visible strong {
+  color: #0a66c2;
+  text-decoration: underline;
+}
+
 .linkedin-post__actions {
   display: flex;
   flex-wrap: wrap;
