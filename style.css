@@ -521,6 +521,10 @@ a:hover {
   object-position: center 42%;
 }
 
+.news-update__media--portrait {
+  aspect-ratio: 3 / 4;
+}
+
 .news-update__content {
   padding: 1.25rem;
 }
